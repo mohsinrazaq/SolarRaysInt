@@ -240,6 +240,7 @@ ul.navbar-nav.nav-fill {
 .dropdown-item:focus,
 .dropdown-item:hover {
     color: #a3c962;
+    font-size: 18px;
 }
 
 .navbar-light .navbar-nav.active>.nav-link,
