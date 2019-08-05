@@ -75,3 +75,204 @@
 
 </div>
 <!-- //header ended here  -->
+
+
+<section class="net-metering">
+
+</section>
+
+
+
+
+
+
+
+<!-- footer started -->
+<footer class="py-lg-5 py-md-4 py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-bottom">
+                <h4>Branch-1</h4>
+                <div class="footer-top mt-2">
+                    <p>Suspendisse tincidunt velit velit sagittis vehicula. Duis posuere dolor sit amet</p>
+                </div>
+                <div class="line-footer"></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-bottom">
+                <h4>Branch-2</h4>
+                <div class="footer-top mt-2">
+                    <p>Suspendisse tincidunt velit velit sagittis vehicula. Duis posuere dolor sit amet</p>
+                </div>
+                <div class="line-footer"></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-bottom">
+                <h4> Contact Us</h4>
+                <div class="footer-top mt-3">
+                    <p><span>Address</span> House No. 11, Sikandar Block, Main Wahdat Road, Allama Iqbal Town, Lahore.
+                    </p>
+                    <p class="pt-2"> <span> Phone</span> :+(92)312-0408109</p>
+                    <p class="pt-2"><span>Email</span> :<a href="mailto:info@solarraysint.com">info@solarraysint.com</a>
+                    </p>
+                </div>
+                <div class="social-icons mt-lg-3 mt-2">
+                    <ul>
+                        <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                        <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 footer-bottom">
+                <h4> Products</h4>
+                <div class="footer-top mt-md-3 mt-3">
+                    <h6 class="pb-2">Solar Panel</h6>
+                    <h6 class="pb-2">Solar Inverters</h6>
+                    <h6 class="pb-2">Solar VFD(Virtual Frequency Control Device)</h6>
+                    <h6>Dry Batteries</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copy-bottom-txt text-center py-3">
+    <p>
+        © 2019 Solar Rays International. All Rights Reserved | Design by <a href="http://www.mohsinrazzaq.cf" target="_blank">Mohsin Razzaq</a>
+    </p>
+</div>
+<!--//footer ended-->
+
+
+<!--js working-->
+<script src='js/jquery-2.2.3.min.js'></script>
+<!--//js working-->
+<!-- gallery -->
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<!-- //gallery -->
+<!--responsiveslides banner-->
+<script src="js/responsiveslides.min.js"></script>
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function() {
+        // Slideshow 4
+        $("#slider4").responsiveSlides({
+            auto: true,
+            pager: true,
+            nav: false,
+            speed: 900,
+            namespace: "callbacks",
+            before: function() {
+                $('.events').append("<li>before event fired.</li>");
+            },
+            after: function() {
+                $('.events').append("<li>after event fired.</li>");
+            }
+        });
+
+    });
+</script>
+<!--// responsiveslides banner-->
+
+<!-- service Tabs -->
+<script>
+    $(function() {
+        var $tabButtonItem = $('#tab-button li'),
+            $tabSelect = $('#tab-select'),
+            $tabContents = $('.tab-contents'),
+            activeClass = 'is-active';
+
+        $tabButtonItem.first().addClass(activeClass);
+        $tabContents.not(':first').hide();
+
+        $tabButtonItem.find('a').on('click', function(e) {
+            var target = $(this).attr('href');
+
+            $tabButtonItem.removeClass(activeClass);
+            $(this).parent().addClass(activeClass);
+            $tabSelect.val(target);
+            $tabContents.hide();
+            $(target).show();
+            e.preventDefault();
+        });
+
+        $tabSelect.on('change', function() {
+            var target = $(this).val(),
+                targetSelectNum = $(this).prop('selectedIndex');
+
+            $tabButtonItem.removeClass(activeClass);
+            $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+            $tabContents.hide();
+            $(target).show();
+        });
+    });
+</script>
+<!--//service Tabs -->
+
+
+<!--gallery starts-->
+<script>
+    $(document).ready(function() {
+
+        $(".filter-button").click(function() {
+            var value = $(this).attr('data-filter');
+
+            if (value == "all") {
+                //$('.filter').removeClass('hidden');
+                $('.filter').show('1000');
+            } else {
+                //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                $(".filter").not('.' + value).hide('3000');
+                $('.filter').filter('.' + value).show('3000');
+
+            }
+        });
+
+        if ($(".filter-button").removeClass("active")) {
+            $(this).removeClass("active");
+        }
+        $(this).addClass("active");
+
+    });
+</script>
+<!--// gallery ends-->
+
+<script src="js/move-top.js"></script>
+<script src="js/easing.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event) {
+            event.preventDefault();
+            $('html,body').animate({
+                scrollTop: $(this.hash).offset().top
+            }, 900);
+        });
+    });
+</script>
+
+<!-- start-smoth-scrolling -->
+
+<!-- here stars scrolling icon -->
+<script>
+    $(document).ready(function() {
+
+        var defaults = {
+            containerID: 'toTop', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+        };
+
+
+        $().UItoTop({
+            easingType: 'easeOutQuart'
+        });
+
+    });
+</script>
+<!-- //here ends scrolling icon -->
+
+<!--bootstrap working-->
+<script src="js/bootstrap.min.js"></script>
+<!-- //bootstrap working-->
+</!--bootstrap>
+
+</html
