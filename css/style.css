@@ -214,17 +214,17 @@ ul.navbar-nav.nav-fill {
 .navbar-light .navbar-nav .show>.nav-link,
 .dropdown-item.active,
 .dropdown-item:active {
-    color: #a3c962;
+    color: #b1e45a;
     background: transparent;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: rgb(71, 59, 59);
-    font-size: 15px;
-    letter-spacing: 2px;
+    font-size: 12px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 800;
-    margin: 0px 4px;
+    margin: 0px 2px;
     padding: 30px 17px 4px;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -238,7 +238,7 @@ ul.navbar-nav.nav-fill {
 .dropdown-item:focus,
 .dropdown-item:hover {
     color: #a3c962;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .navbar-light .navbar-nav.active>.nav-link,
