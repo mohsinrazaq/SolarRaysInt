@@ -1,0 +1,4 @@
+cpanel usename and password 
+solarraysint.com:2083
+name : solarraysint
+password : 55#e#Plus#19
