@@ -1868,3 +1868,9 @@ ul#tab-button li a.color-4 span {
         height: 11em;
     }
 }
+
+.solar-rays-address {
+    width: 60%;
+    margin-left: 20%;
+    padding-bottom: 50px;
+}
