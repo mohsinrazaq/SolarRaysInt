@@ -2,6 +2,11 @@ section {
     background-color: #eeeeee;
 }
 
+#dwn-btn {
+    margin-top: 50px !important;
+    margin-left: 42% !important;
+}
+
 .align-left {
     text-align: left;
 }
