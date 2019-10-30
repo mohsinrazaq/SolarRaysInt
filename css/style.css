@@ -253,15 +253,15 @@ ul.navbar-nav.nav-fill {
 /*-- banner --*/
 
 .one-img {
-    background: url(../images/slider/solar1.jpg)no-repeat center;
+    background: url(../images/slider/solar14.jpg)no-repeat center;
 }
 
 .two-img {
-    background: url(../images/slider/solar2.jpg)no-repeat center;
+    background: url(../images/slider/solar15.jpg)no-repeat center;
 }
 
 .three-img {
-    background: url(../images/slider/solar11.jpg)no-repeat center;
+    background: url(../images/slider/solar17.jpg)no-repeat center;
 }
 
 .slider-img {
@@ -552,7 +552,11 @@ background-size:35px;
 /*--about--*/
 
 .about-color {
-    background: #000;
+    background: #ffb100;
+}
+
+.line-w3ls-title p {
+    color: black !important;
 }
 
 .about-w3layouts-grids {
@@ -563,6 +567,10 @@ background-size:35px;
     font-size: 35px;
     color: #ffb100;
     margin-bottom: 20px;
+}
+
+.color-1 {
+    color: orange !important;
 }
 
 .about-icon-top:hover span {
@@ -651,6 +659,10 @@ background-size:35px;
     position: absolute;
     top: -30px;
     right: -25px;
+}
+
+.pt-2 {
+    color: white !important;
 }
 
 @-webkit-keyframes animate-positive {
