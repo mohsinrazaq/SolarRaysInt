@@ -665,6 +665,26 @@ background-size:35px;
     color: white !important;
 }
 
+.footer-container {
+    background-color: orange;
+}
+
+.footer-container h4 {
+    color: black;
+}
+
+.footer-top p {
+    color: white !important;
+}
+
+.footer-top .email a {
+    color: white !important;
+}
+
+.footer-top .products {
+    color: white !important;
+}
+
 .footerr-txt {
     margin: 0 !important;
     padding: 0 !important;
