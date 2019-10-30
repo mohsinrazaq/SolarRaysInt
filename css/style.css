@@ -691,6 +691,7 @@ background-size:35px;
     padding-bottom: 5px !important;
     height: 10px !important;
     font-size: 12px !important;
+    color: white !important;
 }
 
 @-webkit-keyframes animate-positive {
